@@ -1,0 +1,18 @@
+.{
+    .name = "protobuf_c",
+    .version = "1.5.0",
+    .minimum_zig_version = "0.12.0",
+    .dependencies = .{
+        .protobuf_c = .{
+            .url = "git+https://github.com/protobuf-c/protobuf-c?ref=v1.5.0#8c201f6e47a53feaab773922a743091eb6c8972a",
+            .hash = "12205a20f38efb23d8f688ddb208047b26235608d9fde4c84ce3302ea156443c2b12",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+        "LICENSE-PROTOBUF_C",
+        "readme.md",
+    },
+}
