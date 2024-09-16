@@ -28,3 +28,9 @@ const protobuf_c_dep = b.dependency("protobuf_c", .{
 });
 your_exe.linkLibrary(protobuf_c_dep.artifact("protobuf_c"));
 ```
+
+## Version Support Matrix
+
+|  Refname | protobuf-c Version | Zig `0.12.x` | Zig `0.13.x` | Zig `0.14.0-dev` |
+|----------|--------------------|--------------|--------------|------------------|
+| `1.5.0`  | `1.5.0`            | ✅           | ✅          | ✅              |
