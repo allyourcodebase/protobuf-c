@@ -6,13 +6,14 @@ pub fn build(b: *std.Build) void {
 
     const upstream = b.dependency("protobuf_c", .{});
 
-    const lib = b.addStaticLibrary(.{
+    const lib = b.addLibrary(.{
         .name = "protobuf_c",
-        .target = target,
-        .optimize = optimize,
+        .root_module = b.createModule(.{
+            .target = target,
+            .optimize = optimize,
+            .link_libc = true,
+        }),
     });
-
-    lib.linkLibC();
 
     lib.addCSourceFiles(.{
         .root = upstream.path("protobuf-c"),

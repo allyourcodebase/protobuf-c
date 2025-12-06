@@ -2,7 +2,7 @@
     .name = .protobuf_c,
     .fingerprint = 0x39094F755166B308,
     .version = "1.5.0",
-    .minimum_zig_version = "0.14.0",
+    .minimum_zig_version = "0.15.2",
     .dependencies = .{
         .protobuf_c = .{
             .url = "git+https://github.com/protobuf-c/protobuf-c?ref=v1.5.0#8c201f6e47a53feaab773922a743091eb6c8972a",
